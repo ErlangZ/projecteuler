@@ -1,0 +1,1 @@
+print sum(list(reduce(lambda x,y: x|y, [set((n, n-l*2, n-l*4, n-l*6)) for l, n in enumerate([i**2 for i in xrange(1, 1001+1, 2)])])))
